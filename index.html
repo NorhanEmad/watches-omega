@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <title>Watches</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a class="logo" href="#">Omega</a>
+                <ul >
+                    <li><a href="https://www.omegawatches.com/suggestions/omega-mens-watches">Men</a></li>
+                    <li><a href="https://www.omegawatches.com/suggestions/omega-womens-watches">Women</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="text">
+                    <h2>Omega SA <br>Swiss luxury watchmaker</h2>
+                    <p>Founded by Louis Brandt in La Chaux-de-Fonds in 1848, the company formerly operated as La Generale Watch Co. until incorporating the name Omega in 1903, becoming Louis Brandt et Frère-Omega Watch & Co.</p>
+                </div>
+                <div>
+                <button class="button" id="toggle">Some Watches</button>
+                <div class="images">
+                    <img src="images/1.PNG.png">
+                    <img src="images/2.PNG.png">
+                    <img src="images/3.PNG.png">
+                    <img src="images/4.PNG.png">
+                    <img src="images/5.PNG.png">
+                    <img src="images/6.PNG.png">
+                    <img src="images/7.PNG.png">
+                    <img src="images/8.PNG.png">
+                </div>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $("#toggle").on("click",function(){
+                            $(".images").slideToggle("slow");
+                        });
+                    });
+                </script>
+                
+            </div> 
+            
+        </div>
+    </body>
+</html>
